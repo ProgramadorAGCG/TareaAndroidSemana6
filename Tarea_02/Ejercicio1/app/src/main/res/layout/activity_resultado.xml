@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Resultado">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="351dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/tvCostoDia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Costo x día: "
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tvCostoTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Costo Total: "
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tvDescuento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descuento: "
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tvTotalPagar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total a Pagar: "
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgLugar"
+            android:layout_width="334dp"
+            android:layout_height="251dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/btnRetornar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Retornar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLugar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
